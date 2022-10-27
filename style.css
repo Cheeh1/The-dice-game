@@ -6,6 +6,7 @@
 
 body {
     background-image: linear-gradient(to right, rgb(158, 18, 37), rgb(141, 22, 87));
+    position: relative;
 }
 .container {
     display: flex;
@@ -82,6 +83,7 @@ body {
 }
 .btn--new {
     margin-left: 15px;
+    margin-top: 15px;
 }
 .btn--roll {
     margin-top: 80px;
@@ -132,5 +134,37 @@ body {
     .options {
         top: 15%;
         left:34%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+    .container {
+        margin: 70px auto;
+    }
+
+    .current {
+        margin-left: 25px;
+    }
+
+    .options {
+        left: 40%;
+    }
+
+    .btn--hold {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .container {
+        margin: 70px auto;
+    }
+
+    .options {
+        left: 43%;
+    }
+
+    .btn--hold {
+        margin-left: 15px;
     }
 }
